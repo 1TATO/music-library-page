@@ -1,0 +1,48 @@
+:root {
+  font-size: 60%;
+
+  --color-primary: #15142c;
+  --color-secundary: #040517;
+  --color-text: #d1d1d3;
+  --color-light-blue: #200f56;
+  --color-links: #40404e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--color-primary);
+  color: var(--color-text);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Nunito;
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}

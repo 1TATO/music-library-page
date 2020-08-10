@@ -1,0 +1,93 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  /* justify-content: start; */
+}
+
+#page-landing-aside {
+  width: 350px;
+  background-color: var(--color-secundary);
+
+  display: flex;
+  flex-direction: column;
+}
+
+#page-landing-aside #profile {
+  margin: 75px 20px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#page-landing-aside #profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.5rem;
+  margin-right: 10px;
+}
+
+#page-landing-aside #profile .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100px;
+}
+
+#page-landing-aside #profile .content h1 {
+  font-size: 3rem;
+}
+
+#profile .content a {
+  display: flex;
+  align-items: center;
+  color: var(--color-links);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#profile .content a p {
+  margin-right: 5px;
+}
+
+#profile .content a:hover {
+  color: var(--color-text);
+  transition: 0.2s;
+}
+
+#wrapper-links {
+  margin: 150px auto;
+
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-top: 50px;
+  border-top: 1px solid var(--color-light-blue);
+  padding-top: 20px;
+}
+
+#links a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--color-links);
+  margin-bottom: 10px;
+}
+
+#links a:hover {
+  color: var(--color-text);
+  transition: 0.2s;
+}
+
+#links p {
+  margin-left: 10px;
+}
