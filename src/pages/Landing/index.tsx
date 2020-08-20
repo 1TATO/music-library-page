@@ -1,5 +1,14 @@
 import React from 'react';
 
+import {
+  PageLanding,
+  LeftColumn,
+  Profile,
+  ProfileInfo,
+  LinksWrapper,
+  Links,
+} from './styles';
+
 import profileImg from '../../assets/images/profile.jpg';
 
 import SettingsIcon from '@material-ui/icons/Settings';
@@ -12,70 +21,64 @@ import ChatBubbleOutlineOutlinedIcon from '@material-ui/icons/ChatBubbleOutlineO
 import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
 import PersonOutlinedIcon from '@material-ui/icons/PersonOutlined';
 
-import './styles.css';
-
 function Landing() {
   return (
-    <div id="page-landing">
-      <aside id="page-landing-aside">
-        <div id="profile">
+    <PageLanding>
+      <LeftColumn>
+        <Profile>
           <img src={profileImg} alt="Profile" />
-          <div className="content">
+          <ProfileInfo>
             <h1>Dany Schudler</h1>
-            <a href="#">
+            <div>
               <p>Edit profile</p>
               <SettingsIcon />
-            </a>
-          </div>
-        </div>
+            </div>
+          </ProfileInfo>
+        </Profile>
 
-        <div id="wrapper-links">
-          <div id="links" className="app-links">
-            <a href="#">
-              <CameraOutlinedIcon fontSize="large" />
-              <p>Overview</p>
-            </a>
+        <LinksWrapper>
+          <Links>
+            <CameraOutlinedIcon fontSize="small" />
+            <p>Overview</p>
+          </Links>
 
-            <a href="#">
-              <NewReleasesOutlinedIcon fontSize="large" />
-              <p>News</p>
-            </a>
+          <Links>
+            <NewReleasesOutlinedIcon fontSize="small" />
+            <p>News</p>
+          </Links>
 
-            <a href="#">
-              <AudiotrackOutlinedIcon fontSize="large" />
-              <p>Playlists</p>
-            </a>
+          <Links>
+            <AudiotrackOutlinedIcon fontSize="small" />
+            <p>Playlists</p>
+          </Links>
 
-            <a href="#">
-              <WifiTetheringIcon fontSize="large" />
-              <p>Discover</p>
-            </a>
-          </div>
+          <Links>
+            <WifiTetheringIcon fontSize="small" />
+            <p>Discover</p>
+          </Links>
 
-          <div id="links" className="personal-links">
-            <a href="#">
-              <DashboardOutlinedIcon fontSize="large" />
-              <p>Dashboard</p>
-            </a>
+          <Links>
+            <DashboardOutlinedIcon fontSize="small" />
+            <p>Dashboard</p>
+          </Links>
 
-            <a href="#">
-              <ChatBubbleOutlineOutlinedIcon fontSize="large" />
-              <p>Messages</p>
-            </a>
+          <Links>
+            <ChatBubbleOutlineOutlinedIcon fontSize="small" />
+            <p>Messages</p>
+          </Links>
 
-            <a href="#">
-              <NotificationsOutlinedIcon fontSize="large" />
-              <p>Notifications</p>
-            </a>
+          <Links>
+            <NotificationsOutlinedIcon fontSize="small" />
+            <p>Notifications</p>
+          </Links>
 
-            <a href="#">
-              <PersonOutlinedIcon fontSize="large" />
-              <p>Account</p>
-            </a>
-          </div>
-        </div>
-      </aside>
-    </div>
+          <Links>
+            <PersonOutlinedIcon fontSize="small" />
+            <p>Account</p>
+          </Links>
+        </LinksWrapper>
+      </LeftColumn>
+    </PageLanding >
   );
 }
 
