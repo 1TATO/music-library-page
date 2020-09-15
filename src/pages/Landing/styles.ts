@@ -8,7 +8,7 @@ export const PageLanding = styled.div`
 `;
 
 export const LeftColumn = styled.div`
-  width: 200px;
+  width: 30rem;
   height: 100vh;
   background-color: var(--color-secundary);
 
@@ -18,16 +18,15 @@ export const LeftColumn = styled.div`
 `;
 
 export const Profile = styled.div`
-  margin: 65px 20px;
-
+  margin: 6.5rem auto;
   display: flex;
   flex-direction: row;
 
-  > img {
-    width: 50px;
-    height: 50px;
-    border-radius: 4px;
-    margin-right: 10px;
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.4rem;
+    margin-right: 1rem;
   }
 `;
 
@@ -35,43 +34,67 @@ export const ProfileInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 100px;
+  width: 15rem;
 
   h1 {
-    font-size: 15px;
-    line-height: 15px;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
   }
 
-  div {
-    display: flex;
-    align-items: center;
+  a {
+    font-size: 2rem;
     color: var(--color-links);
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.2s;
 
-    p {
-      font-size: 12px;
-      margin-right: 5px;
+    svg {
+      margin-left: 0.5rem;
+    }
+
+    &:hover {
+      color: var(--color-text);
     }
   }
 `;
 
 export const LinksWrapper = styled.div`
-  margin: 70px auto;
-  font-size: 12px;
+  margin: 15rem auto;
   color: var(--color-links);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: center;  
-`;
 
-export const Links = styled.div`
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 15rem;
+    border-top: 1px solid var(--color-links);
 
-  p {
-    margin-left: 5px;
+    a {
+      font-size: 2rem;
+      color: var(--color-links);
+      align-items: center;
+      text-decoration: none;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 1rem;
+      }
+
+      &:first-child {
+        margin-top: 2rem;
+      }
+
+      &:hover {
+        color: var(--color-text);
+      }
+    }
+
+    &:last-child {
+      margin-top: 3rem;
+    }
   }
 `;

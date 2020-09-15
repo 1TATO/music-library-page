@@ -6,7 +6,6 @@ import {
   Profile,
   ProfileInfo,
   LinksWrapper,
-  Links,
 } from './styles';
 
 import profileImg from '../../assets/images/profile.jpg';
@@ -27,55 +26,60 @@ function Landing() {
       <LeftColumn>
         <Profile>
           <img src={profileImg} alt="Profile" />
+
           <ProfileInfo>
             <h1>Dany Schudler</h1>
-            <div>
-              <p>Edit profile</p>
+            <a href="/">
+              Edit profile 
               <SettingsIcon />
-            </div>
+            </a>
           </ProfileInfo>
         </Profile>
 
         <LinksWrapper>
-          <Links>
-            <CameraOutlinedIcon fontSize="small" />
-            <p>Overview</p>
-          </Links>
+          <div className="container">
+            <a href="/">
+              <CameraOutlinedIcon fontSize="large" />
+              Overview
+            </a>
 
-          <Links>
-            <NewReleasesOutlinedIcon fontSize="small" />
-            <p>News</p>
-          </Links>
+            <a href="/">
+              <NewReleasesOutlinedIcon fontSize="large" />
+              News
+            </a>
 
-          <Links>
-            <AudiotrackOutlinedIcon fontSize="small" />
-            <p>Playlists</p>
-          </Links>
+            <a href="/">
+              <AudiotrackOutlinedIcon fontSize="large" />
+              Playlists
+            </a>
 
-          <Links>
-            <WifiTetheringIcon fontSize="small" />
-            <p>Discover</p>
-          </Links>
+            <a href="/">
+              <WifiTetheringIcon fontSize="large" />
+              Discover
+            </a>
+          </div>
 
-          <Links>
-            <DashboardOutlinedIcon fontSize="small" />
-            <p>Dashboard</p>
-          </Links>
+          <div className="container">
+            <a href="/">
+              <DashboardOutlinedIcon fontSize="large" />
+              Dashboard
+            </a>
 
-          <Links>
-            <ChatBubbleOutlineOutlinedIcon fontSize="small" />
-            <p>Messages</p>
-          </Links>
+            <a href="/">
+              <ChatBubbleOutlineOutlinedIcon fontSize="large" />
+              Messages
+            </a>
 
-          <Links>
-            <NotificationsOutlinedIcon fontSize="small" />
-            <p>Notifications</p>
-          </Links>
+            <a href="/">
+              <NotificationsOutlinedIcon fontSize="large" />
+              Notifcations
+            </a>
 
-          <Links>
-            <PersonOutlinedIcon fontSize="small" />
-            <p>Account</p>
-          </Links>
+            <a href="/">
+              <PersonOutlinedIcon fontSize="large" />
+              Account
+            </a>
+          </div>
         </LinksWrapper>
       </LeftColumn>
     </PageLanding >
