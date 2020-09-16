@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-export const PageLanding = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-`;
-
 export const LeftColumn = styled.div`
   width: 30rem;
   height: 100vh;

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-  PageLanding,
   LeftColumn,
   Profile,
   ProfileInfo,
@@ -22,67 +21,65 @@ import PersonOutlinedIcon from '@material-ui/icons/PersonOutlined';
 
 function Landing() {
   return (
-    <PageLanding>
-      <LeftColumn>
-        <Profile>
-          <img src={profileImg} alt="Profile" />
+    <LeftColumn>
+      <Profile>
+        <img src={profileImg} alt="Profile" />
 
-          <ProfileInfo>
-            <h1>Dany Schudler</h1>
-            <a href="/">
-              Edit profile 
-              <SettingsIcon />
-            </a>
-          </ProfileInfo>
-        </Profile>
+        <ProfileInfo>
+          <h1>Dany Schudler</h1>
+          <a href="/">
+            Edit profile
+            <SettingsIcon />
+          </a>
+        </ProfileInfo>
+      </Profile>
 
-        <LinksWrapper>
-          <div className="container">
-            <a href="/">
-              <CameraOutlinedIcon fontSize="large" />
+      <LinksWrapper>
+        <div className="container">
+          <a href="/">
+            <CameraOutlinedIcon fontSize="large" />
               Overview
-            </a>
+          </a>
 
-            <a href="/">
-              <NewReleasesOutlinedIcon fontSize="large" />
+          <a href="/">
+            <NewReleasesOutlinedIcon fontSize="large" />
               News
-            </a>
+          </a>
 
-            <a href="/">
-              <AudiotrackOutlinedIcon fontSize="large" />
+          <a href="/">
+            <AudiotrackOutlinedIcon fontSize="large" />
               Playlists
-            </a>
+          </a>
 
-            <a href="/">
-              <WifiTetheringIcon fontSize="large" />
+          <a href="/">
+            <WifiTetheringIcon fontSize="large" />
               Discover
-            </a>
-          </div>
+          </a>
+        </div>
 
-          <div className="container">
-            <a href="/">
-              <DashboardOutlinedIcon fontSize="large" />
+        <div className="container">
+          <a href="/">
+            <DashboardOutlinedIcon fontSize="large" />
               Dashboard
-            </a>
+          </a>
 
-            <a href="/">
-              <ChatBubbleOutlineOutlinedIcon fontSize="large" />
+          <a href="/">
+            <ChatBubbleOutlineOutlinedIcon fontSize="large" />
               Messages
-            </a>
+          </a>
 
-            <a href="/">
-              <NotificationsOutlinedIcon fontSize="large" />
+          <a href="/">
+            <NotificationsOutlinedIcon fontSize="large" />
               Notifcations
-            </a>
+          </a>
 
-            <a href="/">
-              <PersonOutlinedIcon fontSize="large" />
+          <a href="/">
+            <PersonOutlinedIcon fontSize="large" />
               Account
-            </a>
-          </div>
-        </LinksWrapper>
-      </LeftColumn>
-    </PageLanding >
+          </a>
+        </div>
+      </LinksWrapper>
+    </LeftColumn>
   );
 }
 
